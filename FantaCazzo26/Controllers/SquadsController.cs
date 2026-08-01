@@ -8,9 +8,9 @@ namespace FantaCazzo26.Controllers;
 [Route("api/[controller]")]
 public class SquadsController : ControllerBase
 {
-    private readonly ISquadService _service;
+    private readonly ISquadsService _service;
 
-    public SquadsController(ISquadService service)
+    public SquadsController(ISquadsService service)
     {
         _service = service;
     }

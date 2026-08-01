@@ -11,4 +11,6 @@ public class FantaCazzo26Context : DbContext
 
     public DbSet<Squad> Squads { get; set; }
     public DbSet<Player> Players { get; set; }
+    
+    public DbSet<Acquisition> Acquisitions { get; set; }
 }

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FantaCazzo26.Services;
 
-public class SquadService : ISquadService
+public class SquadsService : ISquadsService
 {
     private readonly FantaCazzo26Context _context;
 
-    public SquadService(FantaCazzo26Context context)
+    public SquadsService(FantaCazzo26Context context)
     {
         _context = context;
     }

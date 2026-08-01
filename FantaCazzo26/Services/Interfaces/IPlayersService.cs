@@ -2,16 +2,16 @@ using FantaCazzo26.Models;
 
 namespace FantaCazzo26.Services.Interfaces
 {
-    public interface IPlayersRepository
+    public interface IPlayersService
     {
-        Task<Player> Save(Player player);
+        Task<List<Player>> LoadPlayers(string percorso);
 
-        Task<List<Player>> FindAll();
+        Task<List<Player>> FindBySquad(string squad);
 
-        Task<Player?> FindById(long id);
+        Task<Player?> FindById(long playerId);
 
-        Task<List<Player>> FindPlayersBySquad(string squad);
+        Task<List<Player>> GetAllPlayers();
 
-        Task DeleteAll();
+        Task DeleteAllPlayers();
     }
 }

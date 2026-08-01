@@ -1,10 +1,11 @@
 using FantaCazzo26.Data;
 using FantaCazzo26.Models;
+using FantaCazzo26.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace FantaCazzo26.Services
 {
-    public class PlayersService
+    public class PlayersService : IPlayersService
     {
         private readonly FantaCazzo26Context _context;
 

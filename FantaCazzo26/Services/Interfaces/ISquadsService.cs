@@ -2,7 +2,7 @@ using FantaCazzo26.Models;
 
 namespace FantaCazzo26.Services.Interfaces;
 
-public interface ISquadService
+public interface ISquadsService
 {
     Task<Squad> AddTeam(string name, string president, int credits);
 
