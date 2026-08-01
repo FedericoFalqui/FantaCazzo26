@@ -1,15 +1,16 @@
 using FantaCazzo26.Models;
 using Microsoft.AspNetCore.Mvc;
 using FantaCazzo26.Services;
+using FantaCazzo26.Services.Interfaces;
 
 namespace FantaCazzo26.Controllers{
     [ApiController]
     [Route("players")]
     public class PlayersController : ControllerBase
     {
-        private readonly PlayersService _playersService;
+        private readonly IPlayersService _playersService;
 
-        public PlayersController(PlayersService playersService)
+        public PlayersController(IPlayersService playersService)
         {
             _playersService = playersService;
         }
