@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Fantacaspio.Entities;
+namespace FantaCazzo26.Models;
 
 [Table("players")]
 public class Player
